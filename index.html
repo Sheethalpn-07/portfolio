@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">My Portfolio</a>
+            </div>
+            <ul class="nav-links">
+               
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="profile.png" alt="Profile Image">
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Hello! I'm Sheethal, a passionate web developer with a keen interest in building efficient and scalable web applications. I love learning new technologies and tackling challenges. With a solid foundation in HTML, CSS, JavaScript, and React, I'm excited to contribute to the ever-evolving world of web development.</p>
+                <p>When I'm not coding, you can find me exploring new places, reading, or working on personal projects to improve my skills.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="marquee">
+            <div class="skills-container">
+                <!-- Skills List -->
+                <div class="skill">
+                    <img src="html.png" alt="HTML Icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="css.png" alt="CSS Icon">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="js.jpg" alt="JavaScript Icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="sql.png" alt="SQL Icon">
+                    <p>SQL</p>
+                </div>
+                <div class="skill">
+                    <img src="react.png" alt="React Icon">
+                    <p>React</p>
+                </div>
+                <!-- Repeat the items less times for smoother scrolling -->
+                <div class="skill">
+                    <img src="html.png" alt="HTML Icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="css.png" alt="CSS Icon">
+                    <p>CSS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        
+        <!-- Website Traffic Analysis Project -->
+        <div class="project">
+            <img src="web.jpg" alt="Website Traffic Analysis" class="project-img">
+            <div class="project-description">
+                <h2>Website Traffic Analysis</h2>
+                <p>
+                    This project focuses on analyzing website traffic data to provide insights into visitor behavior, session duration, bounce rates, and more. The tool visualizes data through interactive charts and graphs, helping users understand their audience and improve marketing strategies.
+                </p>
+                
+            </div>
+        </div>
+    
+        <!-- Secure Healthcare Management Project -->
+        <div class="project">
+            <img src="secure.png" alt="Secure Healthcare Management" class="project-img">
+            <div class="project-description">
+                <h2>Secure Healthcare Management</h2>
+                <p>
+                    This project focuses on providing a secure platform for managing healthcare data. It ensures the safety and privacy of patient information through encryption and secure login protocols. 
+                <p>
+                    The platform includes features like user authentication, role-based access, and secure data storage, ensuring compliance with healthcare regulations such as HIPAA.
+                </p>
+            </div>
+        </div>
+    
+    </section>
+    
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out! I'd love to hear from you.</p>
+            <form action="#" method="POST" class="contact-form">
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="input-container">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Your Message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank" class="social-icon">
+                <img src="github.jpg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="social-icon">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/yourusername/" target="_blank" class="social-icon">
+                <img src="insta.jpg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

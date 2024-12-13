@@ -1,0 +1,498 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Basic Styling for Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3e50;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keeps the navbar on top of other content */
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Logo styling */
+.navbar .logo a {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.nav-links li a:hover {
+    color: #a3b6d8;
+}
+
+/* Mobile-friendly design (responsive) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling for Projects Section */
+#projects {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f0f4f8, #a3b6d8);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#projects h1 {
+    font-size: 2.2rem; /* Reduced font size */
+    margin-bottom: 30px;
+    color: #2d3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Styling */
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Reduced gap */
+    margin-bottom: 30px; /* Reduced margin */
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 12px; /* Reduced border-radius */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Reduced padding */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Project Hover Effect */
+.project:hover {
+    transform: translateY(-8px); /* Reduced hover effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image Styling */
+.project-img {
+    width: 450px; /* Reduced width */
+    height: 250px; /* Reduced height */
+    object-fit: cover;
+    border-radius: 8px; /* Reduced border-radius */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.project-img:hover {
+    transform: scale(1.05); /* Slightly reduced zoom effect */
+}
+
+/* Project Description Styling */
+.project-description {
+    max-width: 450px; /* Reduced width */
+    text-align: left;
+    color: #3b4c5c;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-description h2 {
+    font-size: 1.6rem; /* Reduced font size */
+    color: #2d3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.project-description p {
+    font-size: 1rem; /* Reduced font size */
+    color: #5f6b72;
+    line-height: 1.5;
+    margin-bottom: 12px; /* Reduced margin */
+    text-align: justify;
+}
+
+/* Hover Effect on Description */
+.project-description:hover {
+    transform: translateX(5px); /* Slightly reduced hover effect */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15px); /* Slightly reduced animation movement */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in Animation for Projects */
+.project:nth-child(1) {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+}
+.project:nth-child(2) {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.4s;
+}
+.project:nth-child(3) {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+
+
+
+/* Styling for Contact Section */
+#contact {
+    padding: 40px 20px; /* Reduced padding for a more compact look */
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 2rem; /* Reduced font size */
+    margin-bottom: 15px;
+    color: #2d3e50;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+#contact p {
+    font-size: 1rem; /* Reduced font size */
+    color: #5f6b72;
+    margin-bottom: 30px; /* Reduced margin */
+}
+
+.contact-form {
+    max-width: 500px; /* Reduced form width */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+}
+
+.input-container {
+    margin-bottom: 15px; /* Reduced margin */
+    text-align: left;
+}
+
+.input-container label {
+    display: block;
+    font-size: 0.9rem; /* Reduced font size */
+    color: #3b4c5c;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    font-size: 1rem; /* Reduced font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border-color: #a3b6d8;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #2d3e50;
+    color: #fff;
+    padding: 10px 18px; /* Reduced padding */
+    font-size: 1rem; /* Reduced font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3b4c5c;
+}
+
+.submit-btn:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+/* General Styling for Skills Section */
+#skills {
+    text-align: center;
+    padding: 20px;
+}
+
+#skills h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Marquee Container */
+.marquee {
+    overflow: hidden; /* Hides content outside the container */
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    gap: 50px; /* Increase gap to reduce congestion */
+    animation: marquee 25s linear infinite; /* Adjust speed for smoother scrolling */
+    will-change: transform; /* Optimize for performance */
+}
+
+/* Individual Skill Styling */
+.skill {
+    text-align: center;
+    min-width: 150px; /* Increase width to allow for larger items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img {
+    width: 100px; /* Reduce size of icons */
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effect */
+.skill:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
+}
+
+.skill:hover img {
+    transform: scale(1.2); /* Zoom in the icon more on hover */
+    filter: brightness(1.2); /* Brighten the icon */
+}
+
+.skill p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.skill:hover p {
+    color: #007BFF; /* Change text color on hover */
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* Scroll to the left */
+    }
+}
+
+
+
+/* Styling for About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Gap between image and text */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-img {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    border: 4px solid #2d3e50;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 2;
+    max-width: 700px;
+    color: #2d3e50;
+    text-align: left;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2d3e50;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #5f6b72;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        margin-bottom: 20px; /* Space between image and text on smaller screens */
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #ffffff; /* Dark background for footer */
+    padding: 30px 0; /* Increased padding for more space */
+    text-align: center;
+    color: white;
+}
+
+/* Social Links Container */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increase space between icons */
+    flex-wrap: wrap; /* Ensure icons wrap to the next line if the screen is too narrow */
+}
+
+/* Social Icons (Font Awesome version) */
+.social-icon {
+    width: 50px; /* Increased icon size */
+    height: 50px;
+}
+
+.social-icon i {
+    font-size: 35px; /* Increased icon size */
+    color: #fff; /* Default icon color */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Font Awesome Icons */
+.social-icon:hover i {
+    transform: scale(1.1); /* Slight zoom on hover */
+    color: #ff6347; /* Change color to tomato red on hover */
+}
+
+/* Social Icons (Image version) */
+.social-icon img {
+    width: 50px; /* Adjust icon size for image icons */
+    height: 50px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover Effect for Image Icons */
+.social-icon:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 0.8; /* Change opacity on hover */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .social-links {
+        gap: 30px; /* Reduce space between icons on smaller screens */
+    }
+
+    .social-icon {
+        width: 40px; /* Slightly smaller size for mobile */
+        height: 40px;
+    }
+
+    .social-icon i {
+        font-size: 30px; /* Adjust icon size for mobile */
+    }
+}
